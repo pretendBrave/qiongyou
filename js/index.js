@@ -1,4 +1,4 @@
-// 获取图片li的类ming
+// 获取图片li的类名
 var items=document.getElementsByClassName('item');
 console.log(items)
 // 获取上一张按钮的id

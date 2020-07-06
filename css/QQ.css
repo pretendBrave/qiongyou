@@ -1,0 +1,133 @@
+/* 公用样式 */
+.login_width{
+  width: 950px;
+  margin: 0 auto;
+}
+a:hover{
+  text-decoration: underline;
+}
+/* 头部 */
+.lat_catinter{
+  width: 100%; 
+}
+.lat_top{
+  width: 100%;
+  background: #51b7ec;
+  margin-bottom: 5px;
+}
+.lat_top_content{
+  height: 48px;
+  display: flex;
+  justify-content: space-around;
+}
+.logo_left{
+  width: 119px;
+  height: 100%;
+  background: url(/images/index/login/sprite.png);
+}
+.lat_top_right{
+  display: flex;
+  margin-right: 40px;
+  margin-top: 15px;
+}
+.lat_top_right a{
+  font-size: 12px;
+  color: #fff;
+  height: 13px;
+  line-height: 13px;
+  padding: 0 5px;
+}
+.lat_top_right a+a{
+  border-left: 1px solid #ddd;
+}
+.lat_top_right a:first-child i{
+  font-size: 10px;
+}
+/*  左边*/
+.login{
+  display: flex;
+}
+.lat_login_left{
+  width: 433px;
+  padding-top: 10px;
+  color:#666;
+  text-align: center;
+  padding-right: 30px;
+  border-right: 1px dotted #ddd;
+}
+.lat_login_left>div{
+  font-size: 20px;
+  color: #333;
+}
+.lat_login_left>p{
+  padding-top: 20px;
+  line-height: 22px;
+}
+.lat_login_left>p a{
+  display: inline;
+  color: #3481cf;
+}
+.lat_login_left p:nth-child(3) img{
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  width: 134px;
+  height: 134px;
+  padding: 2px;
+}
+.lat_login_left ul{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+}
+.lat_login_left ul li+li{
+  border-left: 1px solid #ddd;
+}
+.lat_login_left ul li a{
+  color: #666;
+  height: 14px;
+  font-size: 12px;
+  padding:0 8px;
+  line-height: 14px;
+}
+/* 右边 */
+.lat_login_right{
+  width: 270px;
+  height: 203px;
+  color: #555;
+  margin-left: 27px;
+}
+.lay_accredit_con{
+  font-size: 12px;
+  width: 227px;
+}
+.cnt_wording{
+  margin: 15px 0;
+}
+.app_site_wording{
+  border-top: 1px dotted #ddd;
+  padding: 12px 0;  
+
+}
+.app_site_wording a{
+  display: inline;
+  color: #51b7bc;
+ 
+}
+.accredit_info{
+  height: 64px;
+}
+.accredit_info ul li:first-child{
+  border-top: 1px dotted #ddd;
+  border-bottom: 1px dotted #ddd;
+  padding: 10px 0;
+}
+.accredit_info ul li:last-child{
+  padding: 10px 0;
+}
+.accredit_info>p{
+  margin-top: 20px;
+}
+.accredit_info>p a{
+  display: inline;
+  color: #51b7bc;
+}

@@ -1,180 +1,160 @@
-*{
-  margin: 0;padding: 0;
-  box-sizing: border-box;
-}
-a{
-  text-decoration: none;
-  display: block;
-}
-body{
-  background: #eee;
-}
-/* 左边 */
-.openplatform-login-container{
-  width: 100%;
-  background: #fff;
-}
-.openplatform-login-top{
-  width: 100%;
-  height: 60px;
-  background:  #ff5300;
-  line-height: 60px;
-}
-.openplatform-login-top h3 a{
-  text-align: center;
-  color: #fff;
-  font-size: 32px;
-}
-.openplatform-login-content{
-  width: 760px;
-  margin: 0 auto;
-  display: flex;
-  padding: 30px 0 60px 0;
-}
-.openplatform-login-left,.openplatform-login-right{
+.control{
   width: 380px;
-  height: 330px;
-  padding-left: 20px;
-  
+  background: #ffffff;
+  padding: 10px 30px;
 }
-.openplatform-login-left h3{
-  font-size:16px ;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.openplatform-login-left>div{
-  font-size: 13px;
-  color: #555;
-  height: 250px;
-  border-right: .5px solid #ff5300;
-}
-.openplatform-login-left>div p a{
-  display: inline;
-}
-.openplatform-login-left>div ul{
-  margin-top: 16px;
-  margin-bottom: 0;
-  padding: 0 20px;
-  max-height: 200px;
-  overflow: auto;
-  line-height: 28px;
-}
-.openplatform-login-left>div .primary-tip{
-  margin-top: 20px;
-  padding-right: 20px;
-}
-.openplatform-login-left>div .primary-tip a{
-  color: #ec6c00;
-  text-decoration: underline;
-}
-.openplatform-login-left>div .secondary-tip{
-  color: #999;
-}
-/* 右边 */
-.openplatform-login-right .login-box{
-  padding: 25px 25px 23px;
-}
-.poptip{
+#control{
   display: flex;
-  justify-content: flex-end;
-  position: relative;
 }
-.poptip .poptip-arrow{
-  width: 106px;
-  height: 28px;
-  font-size: 12px;
+#control li{
+  width: 165px;
+  height: 60px;
+  line-height: 60px;
   text-align: center;
-  line-height: 28px;
-  border: 1px solid #f3d995;
-  background-color: #fefcee;
-  color: #ff9000;
-  position: absolute;
-  left: 140px;
-  top: 3px;
+  color: #323232;
+  border-bottom: 1px solid #ddd;
 }
-.poptip .poptip-arrow em,.poptip .poptip-arrow span{
-  border: 0.5px solid #f3d995;
-  position: absolute;
-  top: 6px;
-  left: 108px;
-  height: 10px;
-  transform: rotate(-45deg);
-}
-.poptip .poptip-arrow span{
-  top: 13px;
-  left: 108px;
-  transform: rotate(-125deg);
-}
-.poptip i{
-  font-size: 50px;
-  color: #f40;
-  border-left-width: 0px;
-  border-bottom-width: 0px;
-}
-.corner-icon-view {
-  width: 300px;
-  height: 44px;
-  font-size: 16px;
+.login_content{
+  margin-left: -125px;
 }
 
-/* 输入框 */
-.login-view-info{
-  list-style: none;
-  position: relative;
+#control li.active{
+  border-bottom: 2px solid #3f9f5f;
 }
-.login-view-info li i{
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  color:#fff;
-  font-size: 20px;
-  background: #ccc;
-  position: absolute;
+.control>span{
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #959595;
 }
-.login-view-info li input{
-  width: 300px;
+.control>span>a{
+  display: inline;
+  color: #3f9f5f;
+}
+.login_tab_content{
+  width: 330px;
+  color: #959595;
+}
+.login_email,.login_phone{
+  display: none;
+
+}
+.login_email input{
+  width: 330px;
   height: 40px;
+  padding: 3px 7px;
   border: 1px solid #ddd;
-  padding-left: 50px;
   outline: none;
 }
-.login-view-info li+li{
-  margin-top: 20px;
+.login_email input+input{
+  margin-top: 30px;
 }
-.login-view-info li:nth-child(3) a{
-  width: 300px;
-  height: 42px;
-  background: #ff5300;
+.span{
+  display: flex;
+  justify-content: flex-end;
+  height: 30px;
+}
+.login_email>span>a{
+  font-size: 12px ;
+  color: #959595;
+  margin-top: 5px;
+
+}
+ .isLogin{
+  width: 330px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  color: #ffffff;
+  border-radius: 3px;
+  background: #3f9f5f;
+}
+.other{
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0 10px 0;
+}
+.other li i{
+  font-size: 40px;
+  cursor: pointer;
+  color: #d7d7d7;
+}
+.other li:first-child i{
+  color: #ff5300;
+}
+/* hover */
+.other li:nth-child(2) i:hover {
+  color:#4a90e2 ;
+}
+.other li:nth-child(3) i:hover{
+  color: #10b041
+}
+.other li:nth-child(4) i:hover{
+  color: #e90e24
+}
+.other_wrap{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #959595;
+  padding: 10px 0;
+}
+.other_wrap span a{
+  display: inline-block;
+  color: #07ae72
+}
+.other_wrap>a{
+  color: #959595;
+}
+/* 短信登录 */
+/* input共用 */
+.login_phone input{
+  border: 1px solid #ddd;
+}
+.select select{
+  width: 85px;
+  height: 40px;
+  border: 1px solid #ddd;
+}
+.select input{
+  width: 240px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+/* 识别码 */
+.heading li{
+  display: flex;
+}
+.heading li:first-child{
+  padding: 30px 0;
+}
+.heading input{
+  width: 200px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.heading li img{
+  margin-left: 7px;
+}
+.heading li:nth-child(2) a{
+  width: 125px;
+  height: 40px;
+  background: #3f9f5f;
+  text-align: center;
   line-height: 40px;
   color: #fff;
-  text-align: center;
   border-radius: 3px;
+  font-size: 14px;
+  margin-left: 7px;
 }
-.login-view-info li:last-child{
-  float: right;
-  padding-top: 15px;
-}
-.login-view-info li:last-child a{
-  float: left;
-  font-size: 12px;
-  color:#6c6c6c;
-  padding-right: 10px;
-}
-/* 底部 */
-.openplatform-login-footer{
+
+.login_content{
   display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  color: #888;
 }
-.openplatform-login-footer a{
-  color: #888;
-  font-size: 13px;
-  padding: 0 5px;
-  height: 18px;
-  line-height: 18px;
-}
-.openplatform-login-footer a+a{
-  border-left: 1px solid #888;
+/* 右边图片 */
+.login_right img{
+  width: 275px;
+ height: 100%;
 }

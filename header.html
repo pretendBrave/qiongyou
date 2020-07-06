@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="icon-font/iconfont.css">
 </head>
+
 <body>
-  <div class="header">
+  <div class="header" id="toTop">
     <div class="nav">
       <!-- 左边 -->
       <div id="center">
@@ -17,7 +19,7 @@
           <div>
             <a href="index.html"><img src="images/index/logo.png"></a>
           </div>
-         <!-- 一级菜单 -->
+          <!-- 一级菜单 -->
           <ul class="previous-menu">
             <li><a href="#">目的地</a></li>
             <li><a href="#">锦囊</a></li>
@@ -26,7 +28,8 @@
               <!-- 二级菜单 -->
               <ul id="secondary-menu">
                 <li id="menu-list">
-                  <a href="#" class="iconfont icon-14" title="旅行论坛">旅行论坛 <span class="iconfont icon-youjiantou"></span></a>
+                  <a href="#" class="iconfont icon-14" title="旅行论坛">旅行论坛 <span
+                      class="iconfont icon-youjiantou"></span></a>
                   <!-- 三级菜单 -->
                   <ul id="level-menu">
                     <li>
@@ -34,18 +37,18 @@
                       <a href="#" class="a1">全部版块<span class="iconfont icon-youjiantou"></span></a>
                     </li>
                     <li>
-                        <p>兴趣小组</p>
-                        <ul>
-                          <li><a href="#">结伴同游</a></li>
-                          <li><a href="#">签证</a></li>
-                          <li><a href="#">旅行摄影</a></li>
-                          <li><a href="#">潜水俱乐部</a></li>
-                          <li><a href="#">带孩子旅行</a></li>
-                          <li><a href="#">自驾</a></li>
-                        </ul>
+                      <p>兴趣小组</p>
+                      <ul>
+                        <li><a href="#">结伴同游</a></li>
+                        <li><a href="#">签证</a></li>
+                        <li><a href="#">旅行摄影</a></li>
+                        <li><a href="#">潜水俱乐部</a></li>
+                        <li><a href="#">带孩子旅行</a></li>
+                        <li><a href="#">自驾</a></li>
+                      </ul>
                     </li>
                     <li>
-                      <p>穷游欧洲</p> 
+                      <p>穷游欧洲</p>
                       <ul>
                         <li><a href="#">法国/摩洛哥</a></li>
                         <li><a href="#">德国</a></li>
@@ -55,7 +58,7 @@
                         <li><a href="#">挪威/瑞典/芬兰/丹麦/冰岛</a></li>
                         <li><a href="#">意大利/梵蒂冈/圣马力诺/马耳他</a></li>
                       </ul>
-                      
+
                     </li>
                     <li>
                       <p>穷游亚洲</p>
@@ -143,7 +146,7 @@
         <div class="right">
           <ul>
             <li class="parent"><input type="text" id="input"></li>
-            <li id="search"><a href="#" class="iconfont icon-sousuo" ></a></li>
+            <li id="search"><a href="#" class="iconfont icon-sousuo"></a></li>
             <li></li>
             <li><a href="#" class="iconfont icon-taobao-line"></a></li>
             <li><a href="#" class="iconfont icon-QQ"></a></li>
@@ -155,7 +158,31 @@
         </div>
       </div>
     </div>
-   </div> 
-   <script src="js/header.js"></script>
+  </div>
+  <script src="js/header.js"></script>
+  <script>
+    // // 当页面滚动时
+    // window.onscroll = function () {
+    //   // 首先先获得页面上方滚动超出的距离
+    //  var scroll=document.body.scrollTop
+    //   console.log(scrollTop)
+    //   // 如果滚动距离>=500时,就显示返回顶部按钮
+    //   if (scrollTop >= 500) {
+    //     toTop.style.display = "block";
+    //   } else {//否则,如果滚动<500,就隐藏返回顶部按钮
+    //     toTop.style.display = "none"
+    //   }
+    // }
+    window.onscroll=function(){
+      var scroll=document.body.scrollTop||document.documentElement.scrollTop;
+      console.log(scroll)
+      if(scroll>=500){
+        toTop.style.display="block";
+      }else{
+        toTop.style.display="none"
+      }
+    }
+  </script>
 </body>
+
 </html>

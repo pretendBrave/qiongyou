@@ -1,0 +1,38 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+  background: #333333;
+  padding: 50px;
+}
+.loginPanel{
+ width: 100%;
+}
+.waiting{
+  width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+.waiting .title{
+  /* text-align: center; */
+  font-size: 20px;
+  color: #fff;
+}
+.waiting img{
+  width: 282px;
+  height: 282px;
+  margin-top: 20px;
+}
+.status{
+  margin: 0 auto;
+  width: 280px;
+  height: 55px;
+  border-radius: 30px;
+  background: #222;
+  border: 1px solid #444;
+  margin-top: 15px;
+ 
+}
+.status p{
+  color: #fff;
+ margin: 5px 0;
+  font-size: 14px;
+}

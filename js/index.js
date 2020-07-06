@@ -147,29 +147,7 @@ function selectList(selectTitle,selectCon){
   } 
 }
 
-// 登录切换
-selectControl("control","con_all");
-function selectControl(selectLi,selectLogin){
-  var select_li=document.getElementById(selectLi).getElementsByTagName("li");
-  console.log(select_li)
-  var select_show=document.getElementsByClassName(selectLogin)
-  console.log(select_show)
 
-  select_show[0].style.display="block";
-
-  for(var i=0;i<select_li.length;i++){
-    (function(i){
-      select_li[i].onclick=function(){
-        for(var j=0;j<select_li.length;j++){
-         select_li[j].className="";
-          select_show[j].style.display="none";
-        }
-        this.className="active";
-        select_show[i].style.display="block";
-      }
-    })(i)
-  } 
-}
 // 登录弹窗
 var popup=document.getElementById("show_login");
 
@@ -186,3 +164,65 @@ close.onclick=function(){
   login.style.display="none";
   mask.style.display="none"
 }
+
+// window.onscroll=function(){
+//   //  首先获得页面上方滚动超出的距离
+//    scrollTop=document.documentElement.scrollTop|| document.body.scrollTop;
+//    console.log(scrollTop)
+//   //  如果滚动距离>=300,就显示返回顶部按钮
+//    if(scrollTop>=600){
+//     searchs.style.display="block";
+//    }else{//否则,如果滚动距离<500,就隐藏返回顶部按钮
+//     searchs.style.display="none"
+//    }
+//  }
+
+
+
+
+show(sidebar);
+var scrollTop=0;
+  // 当页面滚动时
+   function show(formal){
+    window.onscroll=function(){
+      //  首先获得页面上方滚动超出的距离
+       scrollTop=document.documentElement.scrollTop|| document.body.scrollTop;
+       console.log(scrollTop)
+      //  如果滚动距离>=300,就显示返回顶部按钮
+       if(scrollTop>=300){
+        formal.style.display="block";
+       }else{//否则,如果滚动距离<500,就隐藏返回顶部按钮
+        formal.style.display="none"
+       }
+     }
+
+   }
+
+     toTop.onclick=function(e){
+      e.preventDefault();
+     //  window.scrollTo(0,0)
+     //  总距离
+     var dist=scrollTop;
+     // 总步数
+     var steps=200;
+     // 总时间
+     var dura=500;
+     // 每步走多长:总距离/走步数
+     var step=dist/steps
+     // 每步间隔的时间:总时间/总步数
+     var interval=dura/steps
+ // 启动周期性定时器函数
+   var timer = setInterval(function(){
+       // 每次让网页滚动回指定的一步距离
+       window.scrollBy(0,-step)
+       // 每走一步,把步数-1
+       steps--;
+       // 如果所有步数走完了,说明走到头了
+       if(steps==0){
+         // 停止定时器,不要再走了
+         clearInterval(timer)
+         // 将记录总步数的变量还原回初始值,为下次移动做准备
+         steps=500
+       }
+     },interval)//每个一步的时间就移动一次
+    }

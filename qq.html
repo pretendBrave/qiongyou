@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>QQ帐号安全登录</title>
+  <link rel="stylesheet" href="css/qq.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/icon-font/iconfont.css">
 </head>
+
 <body>
-  <div></div>
+  <div class="lat_catinter">
+    <div class="lat_top">
+      <div class="lat_top_content login_width">
+        <div class="logo_left"></div>
+        <div class="lat_top_right">
+          <a href="#" title="什么是QQ登录"><i class="iconfont  icon-wenhao_huabanfuben"></i> QQ登录</a>
+          <a href="#" title="登录授权管理">授权管理</a>
+          <a href="#" title="申请接入">申请接入</a>
+        </div>
+      </div>
+    </div>
+    <div class="login login_width">
+      <!-- 左边 -->
+      <div class="lat_login_left">
+        <div>快速安全登录</div>
+        <p>请使用<a href="#">QQ手机版</a>扫描二维码,<br>
+          安全登录,防止盗号</p>
+        <p><img src="/images/index/login/qq.jpg" alt=""></p>
+        <ul>
+          <li>
+            <a href="#">帐号密码登录</a>
+          </li>
+          <li>
+            <a href="#">注册新帐号</a>
+          </li>
+          <li>
+            <a href="#">意见反馈</a>
+          </li>
+        </ul>
+      </div>
+      <!-- 右边 -->
+      <div class="lat_login_right">
+        <div class="lay_accredit_con">
+          <p class="cnt_wording">该网站已有超过10万用户使用QQ登录</p>
+          <p class="app_site_wording"><a href="#" target="_blank">穷游网</a>将获得以下权限：</p>
+          <div class="accredit_info">
+            <ul>
+              <li >
+                <input type="checkbox" id="select_all" class=" oauth_checkbox_all" hidefocus="true"
+                  checked="checked">
+                <label class="oauth_item_title" for="select_all">全选</label>
+              </li>
+              <li>
+                <input name="api_choose" hidefocus="true" type="checkbox" class="checkbox oauth_checkbox" id="item_80901010" value="80901010" title="默认授权 不可更改" checked="" disabled="">
+                <label for="item_80901010" class="oauth_item_title">获得您的昵称、头像、性别</label>
+              </li>
+            </ul>
+            <p class="oauth_tips">授权后表明你已同意 <a href="#" target="_blank">QQ登录服务协议</a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

@@ -1,0 +1,180 @@
+*{
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  display: block;
+}
+body{
+  background: #eee;
+}
+/* 左边 */
+.openplatform-login-container{
+  width: 100%;
+  background: #fff;
+}
+.openplatform-login-top{
+  width: 100%;
+  height: 60px;
+  background:  #ff5300;
+  line-height: 60px;
+}
+.openplatform-login-top h3 a{
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+}
+.openplatform-login-content{
+  width: 760px;
+  margin: 0 auto;
+  display: flex;
+  padding: 30px 0 60px 0;
+}
+.openplatform-login-left,.openplatform-login-right{
+  width: 380px;
+  height: 330px;
+  padding-left: 20px;
+  
+}
+.openplatform-login-left h3{
+  font-size:16px ;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.openplatform-login-left>div{
+  font-size: 13px;
+  color: #555;
+  height: 250px;
+  border-right: .5px solid #ff5300;
+}
+.openplatform-login-left>div p a{
+  display: inline;
+}
+.openplatform-login-left>div ul{
+  margin-top: 16px;
+  margin-bottom: 0;
+  padding: 0 20px;
+  max-height: 200px;
+  overflow: auto;
+  line-height: 28px;
+}
+.openplatform-login-left>div .primary-tip{
+  margin-top: 20px;
+  padding-right: 20px;
+}
+.openplatform-login-left>div .primary-tip a{
+  color: #ec6c00;
+  text-decoration: underline;
+}
+.openplatform-login-left>div .secondary-tip{
+  color: #999;
+}
+/* 右边 */
+.openplatform-login-right .login-box{
+  padding: 25px 25px 23px;
+}
+.poptip{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.poptip .poptip-arrow{
+  width: 106px;
+  height: 28px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 28px;
+  border: 1px solid #f3d995;
+  background-color: #fefcee;
+  color: #ff9000;
+  position: absolute;
+  left: 140px;
+  top: 3px;
+}
+.poptip .poptip-arrow em,.poptip .poptip-arrow span{
+  border: 0.5px solid #f3d995;
+  position: absolute;
+  top: 6px;
+  left: 108px;
+  height: 10px;
+  transform: rotate(-45deg);
+}
+.poptip .poptip-arrow span{
+  top: 13px;
+  left: 108px;
+  transform: rotate(-125deg);
+}
+.poptip i{
+  font-size: 50px;
+  color: #f40;
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+}
+.corner-icon-view {
+  width: 300px;
+  height: 44px;
+  font-size: 16px;
+}
+
+/* 输入框 */
+.login-view-info{
+  list-style: none;
+  position: relative;
+}
+.login-view-info li i{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color:#fff;
+  font-size: 20px;
+  background: #ccc;
+  position: absolute;
+}
+.login-view-info li input{
+  width: 300px;
+  height: 40px;
+  border: 1px solid #ddd;
+  padding-left: 50px;
+  outline: none;
+}
+.login-view-info li+li{
+  margin-top: 20px;
+}
+.login-view-info li:nth-child(3) a{
+  width: 300px;
+  height: 42px;
+  background: #ff5300;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+}
+.login-view-info li:last-child{
+  float: right;
+  padding-top: 15px;
+}
+.login-view-info li:last-child a{
+  float: left;
+  font-size: 12px;
+  color:#6c6c6c;
+  padding-right: 10px;
+}
+/* 底部 */
+.openplatform-login-footer{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  color: #888;
+}
+.openplatform-login-footer a{
+  color: #888;
+  font-size: 13px;
+  padding: 0 5px;
+  height: 18px;
+  line-height: 18px;
+}
+.openplatform-login-footer a+a{
+  border-left: 1px solid #888;
+}

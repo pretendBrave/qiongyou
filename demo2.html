@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      width: 100%;
+      height: 1200px;
+    }
+    #toTop{
+      position: relative;
+      display: none;
+    }
+    #a1{
+      position: absolute;
+      top: 500px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="toTop">
+    <a href="#" id="a1">返回顶部</a>
+  </div>
+  <script>   
+
+  var scrollTop=0;
+  // 当页面滚动时
+     window.onscroll=function(){
+      //  首先获得页面上方滚动超出的距离
+       scrollTop=document.documentElement.scrollTop|| document.body.scrollTop;
+       console.log(scrollTop)
+      //  如果滚动距离>=500,就显示返回顶部按钮
+       if(scrollTop>=500){
+         toTop.style.display="block";
+       }else{//否则,如果滚动距离<500,就隐藏返回顶部按钮
+         toTop.style.display="none"
+       }
+     }
+   a1.onclick=function(e){
+     e.preventDefault();
+    //  window.scrollTo(0,0)
+    //  总距离
+    var dist=scrollTop;
+    // 总步数
+    var steps=500;
+    // 总时间
+    var dura=500;
+    // 每步走多长:总距离/走步数
+    var step=dist/steps
+    // 每步间隔的时间:总时间/总步数
+    var interval=dura/steps
+// 启动周期性定时器函数
+  var timer = setInterval(function(){
+      // 每次让网页滚动回指定的一步距离
+      window.scrollBy(0,-step)
+      // 每走一步,把步数-1
+      steps--;
+      // 如果所有步数走完了,说明走到头了
+      if(steps==0){
+        // 停止定时器,不要再走了
+        clearInterval(timer)
+        // 将记录总步数的变量还原回初始值,为下次移动做准备
+        steps=500
+      }
+    },interval)//每个一步的时间就移动一次
+   }
+  </script>
+</body>
+</html>

@@ -150,11 +150,11 @@
             <li id="search"><a href="#" class="iconfont icon-sousuo"></a></li>
             <li></li>
             <li><a href="taobao.html" class="iconfont icon-taobao-line"></a></li>
-            <li><a href="#" class="iconfont icon-QQ"></a></li>
-            <li><a href="#" class="iconfont icon-yooxi"></a></li>
-            <li><a href="#" class="iconfont icon-tubiao214"></a></li>
-            <li><a href="#">注册</a></li>
-            <li><a href="#">登录</a></li>
+            <li><a href="qq.html" class="iconfont icon-QQ"></a></li>
+            <li><a href="wx.html" class="iconfont icon-yooxi"></a></li>
+            <li><a href="sian.html" class="iconfont icon-tubiao214"></a></li>
+            <li><a href="reg.html">注册</a></li>
+            <li><a href="login.html">登录</a></li>
           </ul>
         </div>
       </div>
@@ -855,8 +855,8 @@
     </div>
   </div>
   <!-- 侧边导航栏 -->
-  <div class="sidebar">
-    <a href="#">
+  <div class="sidebar" id="sidebar">
+    <a href="#" id="toTop">
       <i class="iconfont icon-shangjiantou"></i>
       <span>返回顶部</span>
     </a>
@@ -873,7 +873,7 @@
   <!-- 弹窗登录 -->
   <div id="mask"></div>
   <div id="login">
-    <p >登录</p>
+    <p>登录</p>
     <i id="close" class="iconfont icon-x"></i>
     <ul id="control">
       <li class="active">帐号登录</li>
@@ -894,13 +894,13 @@
         </ul>
         <div class="other_wrap">
           <span>没有穷游帐号? <a href="#">立即注册</a></span>
-          <a href="#">境外手机好登录</a>
+          <a href="#">境外手机号登录</a>
         </div>
       </div>
       <div class="login_phone con_all">
         <!-- <span>关于穷游网将实行<a href="#">手机绑定实名制的说明</a></span> -->
         <div class="select">
-          <select name="" id="" >
+          <select name="" id="">
             <option value="86">中国大陆</option>
             <option value="353">爱尔兰</option>
             <option value="54">阿根廷</option>
@@ -930,7 +930,26 @@
       </div>
     </div>
   </div>
+  <div class="search-block" id="searchs">
+    <div class="my_width">
+      <div class="tabpage_citys">
+        <div class="select_text">
+          <i class="iconfont icon-jiudian"></i>
+          <span>特价酒店</span>
+          <i class="iconfont icon-xiala"></i>
+        </div>
+        <div class="select_input">
+          <input type="text" placeholder="搜城市/机场/地标/酒店">
+          <input type="text" placeholder="入住日期">
+          <span>-</span>
+          <input type="text" placeholder="退房日期">
+        </div>
+        <a href=""><i class="iconfont icon-sousuo"></i> 搜索特价酒店</a>
+      </div>
+    </div>
+  </div>
   <script src="js/index.js"></script>
+  <script src="js/login.js"></script>
 </body>
 
 </html>
